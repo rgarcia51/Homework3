@@ -36,7 +36,7 @@
 <% @physician.appointments.each do |appointment| %>
 <tr>
   <td><%= appointment.patient.name %></td>
-  <td><%= appointment.visit %></td>
+  <td><%= appointment.visit.strftime("%B %dth, %Y, %I:%M") %></td>
 </tr>
 <% end %>
 </table>
